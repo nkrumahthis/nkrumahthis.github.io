@@ -1,102 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nkrumah Sarpong's Retro Website</title>
-    <style>
-      /* Global Styles */
-      body {
-        font-family: "Courier New", monospace;
-        background-color: #0a0a0a;
-        color: #fff;
-        margin: 0;
-        padding: 0;
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Nkrumah Sarpong's Retro Website</title>
+		<style>
+			/* Global Styles */
+			body {
+				font-family: "Courier New", monospace;
+				margin: 0;
+				padding: 0;
+				background-color: #0a0a0a;
+				color: #fff;
+			}
+
+			a {
+				text-decoration: none;
+				color: #6cbcfa;
+				font-weight: bold;
+			}
+
+      a:hover {
+        text-decoration: underline;
       }
-      h2 {
-        color: #ff6600;
-      }
-      p {
-        font-size: 18px;
-        line-height: 1.6;
-        color: #bbb;
-      }
-      ul {
-        list-style-type: square;
-        margin-left: 20px;
-      }
-      a {
-        text-decoration: none;
-        color: #0078d4;
-        font-weight: bold;
-      }
-      /* Header Styles */
-      h1 {
-        background-color: #0044cc;
-        padding: 20px;
-        text-align: center;
-        font-size: 36px;
-      }
-      /* Main Content Styles */
-      .main-content {
-        max-width: 800px;
-        margin: 20px auto;
-        background-color: #111;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
-      /* Footer Styles */
+
+			.main-content {
+				max-width: 800px;
+				margin: 20px auto;
+				padding: 20px;
+			}
+
       .footer {
-        background-color: #0044cc;
-        padding: 10px 0;
-        text-align: center;
-        font-size: 14px;
+        margin-left: auto;
+        margin-right: 0px;
       }
-    </style>
-  </head>
-  <body>
-    <h1>Emmanuel Nkrumah Sarpong</h1>
-    <div class="main-content">
-      <p>I code for food and fun. 5 years of experience. Backend preferred.</p>
+		</style>
+	</head>
+	<body>
+		<div class="main-content">
+			<h1>Emmanuel Nkrumah Sarpong</h1>
+			<p>
+				I code for food and fun. 5 years of professional experience. Backend
+				preferred.
+			</p>
 
-      <h2>Languages</h2>
-      <div>
-        <p>Top 3 most proficient are:</p>
-        <ul>
-          <li>Javascript/Typescript</li>
-          <li>PHP</li>
-          <li>Go</li>
-        </ul>
-        <p>I have shipped projects written in:</p>
-        <ul>
-          <li>Java</li>
-          <li>Python</li>
-        </ul>
-      </div>
+			<h2>Languages</h2>
+			<div>
+				<p>Top 3 most proficient are:</p>
+				<ul>
+					<li>Javascript/Typescript</li>
+					<li>PHP</li>
+					<li>Go</li>
+					<li>Also: Java, Python</li>
+				</ul>
+			</div>
 
-      <h2>Work Experience</h2>
-      <div>
-        <p>I have worked at Dext, Plato, and Zeepay</p>
-      </div>
+			<h2>Projects</h2>
+			<div>
+				<ul>
+					<li><a href="https://autocedi-web.vercel.app" target="_blank">AutoCedi</a>: Automate payments. Super flexible standing orders</li>
+				</ul>
+			</div>
 
-      <h2>Platforms</h2>
-      <div>
-        <ul>
-          <li><a href="https://github.com/nkrumahthis">GitHub</a></li>
-        </ul>
-      </div>
+			<h2>Work Experience</h2>
+			<div>
+				<p>I have worked at Dext, Plato, and Zeepay</p>
+			</div>
 
-      <h2>Socials</h2>
-      <div>
-        <ul>
-          <li><a href="https://twitter.com/nkrumahthis">Twitter</a></li>
-          <li><a href="https://linkedin.com/in/nkrumahthis">LinkedIn</a></li>
-          <li><a href="https://facebook.com/nkrumahthis">Facebook</a></li>
-        </ul>
-      </div>
-    </div>
+			<h2>Platforms</h2>
+			<div>
+				<ul>
+					<li><a href="https://github.com/nkrumahthis" target="_blank">GitHub</a></li>
+				</ul>
+			</div>
 
-    <div class="footer">&copy; 2023 Nkrumah Sarpong</div>
-  </body>
+			<h2>Socials</h2>
+			<div>
+				<ul>
+					<li><a href="https://twitter.com/nkrumahthis" target="_blank">Twitter</a></li>
+					<li><a href="https://linkedin.com/in/nkrumahthis" target="_blank">LinkedIn</a></li>
+					<li><a href="https://facebook.com/nkrumahthis" target="_blank">Facebook</a></li>
+				</ul>
+			</div>
+			<div class="footer">
+				(c) <span id="currentYear"></span> Nkrumah Sarpong
+			</div>
+		</div>
+
+		<!-- JavaScript to display the current year -->
+		<script>
+			// Get the current year
+			const currentYear = new Date().getFullYear();
+
+			// Display the current year in the footer
+			document.getElementById("currentYear").textContent = currentYear;
+		</script>
+	</body>
 </html>
